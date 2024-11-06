@@ -122,16 +122,45 @@
 
 ---
 
-### **Step 2: Person B Pulls the Update**
+### **Step 2: Person B Pulls the Update and Adds Changes**
 
-1. **Pull Latest Changes**  
-   - *Person B* updates their local repository with:
+1. **Check Status after Person A's Changes**  
+   - *Person B* can check the status of their repository to see if it’s up-to-date or if there are any changes pending a pull.
+   
+     ![](assets/20.jpeg)
+
+2. **Pull Latest Changes**  
+   - *Person B* updates their local repository to include *Person A's* changes by running:
      ```bash
      git pull origin main
      ```
+   
+     ![](assets/21.jpeg)  
+     ![](assets/22.jpeg)
 
-2. **Verify the Changes**  
-   - *Person B* opens `README.md` locally to confirm that the new project description is present.
+3. **Verify the Changes**  
+   - *Person B* opens `README.md` locally to confirm that the new project description from *Person A* is present.
+
+4. **Add New Changes (Person B)**  
+   - *Person B* adds a new sample Python file to the project. After adding the file, they can check the status to see the new file as untracked.
+
+     ![](assets/23.jpeg)  
+     ![](assets/24.jpeg)
+
+5. **Stage Changes**  
+   - *Person B* stages the new file to prepare it for committing. They can confirm the status again to ensure the file is staged.
+
+     ![](assets/25.jpeg)
+
+6. **Commit Changes**  
+   - *Person B* commits the newly added file with a descriptive message and checks the status to confirm the commit.
+
+     ![](assets/26.jpeg)
+
+7. **Push the Changes to GitHub**  
+   - Finally, *Person B* pushes the new commit to the remote repository on GitHub.
+
+     ![](assets/27.jpeg)
 
 ---
 
@@ -194,6 +223,7 @@
    ```bash
    git pull origin <branch-name>
    ```
+
 
 ---
 
